@@ -3,11 +3,20 @@
 @import 'menu';
 @import 'function';
 @import 'home';
+body {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
 header {
     position: fixed;
     z-index: 2;
     width: 100%;
-    padding: 1rem;
+    padding: 1.3rem;
+    border: 2px solid red;
 }
 
 main {
@@ -28,7 +37,6 @@ main {
 }
 
 footer {
-    border: 2px solid red;
     font-size: 1rem;
     position: fixed;
     bottom: 0.4rem;

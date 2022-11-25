@@ -1,6 +1,17 @@
 .home {
     height: 100%;
     padding-top: 40vh;
-    background: linear-gradient() url(/images/img-1.webp) center top;
+    background: url(/images/image-1.jpg) center top;
     background-size: cover;
+    border: 2px solid blue;
+    &__contenier {
+        box-sizing: border-box;
+        filter: brightness(10%);
+        padding-bottom: 2rem;
+        border: 2px solid red;
+        filter: brightness(1);
+    }
+    &__contenier-img {
+        background: url(../images/loggo/mob-log2.png);
+    }
 }

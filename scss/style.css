@@ -121,15 +121,35 @@
 .home {
   height: 100%;
   padding-top: 40vh;
-  background: linear-gradient() url(/images/img-1.webp) center top;
+  background: url(/images/image-1.jpg) center top;
   background-size: cover;
+  border: 2px solid blue;
+}
+.home__contenier {
+  box-sizing: border-box;
+  filter: brightness(10%);
+  padding-bottom: 2rem;
+  border: 2px solid red;
+  filter: brightness(1);
+}
+.home__contenier-img {
+  background: url(../images/loggo/mob-log2.png);
+}
+
+body {
+  background: #28282B;
+  color: #fff;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
 }
 
 header {
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding: 1rem;
+  padding: 1.3rem;
+  border: 2px solid red;
 }
 
 main {
@@ -150,7 +170,6 @@ main .social-icons a:hover {
 }
 
 footer {
-  border: 2px solid red;
   font-size: 1rem;
   position: fixed;
   bottom: 0.4rem;
