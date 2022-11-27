@@ -3,8 +3,9 @@
 @import 'menu';
 @import 'function';
 @import 'home';
+@import 'about';
 body {
-    background: $primary-color;
+    background: $primary-color-theme;
     color: set-text-color($primary-color);
     height: 100vh;
     font-family: 'Noto Serif';

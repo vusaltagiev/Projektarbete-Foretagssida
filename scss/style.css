@@ -162,10 +162,84 @@
 }
 .home__contenier__btn {
   background-color: #FD6D15;
+  border: none;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.home__contenier__btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about {
+  border: 2px solid red;
+  height: 100%;
+  padding: 6vh;
+}
+.about__us {
+  border: 2px solid red;
+  height: 100%;
+}
+.about__us-text {
+  border: 2px solid blue;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.about__us-texts {
+  text-align: center;
+  font-size: small;
+  border: 2px solid red;
+}
+.about__us-texts {
+  border-bottom: 2px solid #FD6D15;
+  padding: 0.5rem;
+}
+.about__us-staff {
+  padding-top: 0.5rem;
+  text-align: center;
+}
+.about__us-staff-img {
+  background: url(/images/staff/staff-1.jpg);
+  background-size: 300px 300px;
+  height: 50%;
+  margin: 7px;
+}
+.about__us-staff-name {
+  border: 2px solid red;
+  text-align: center;
+}
+.about__us-staff-title {
+  border: 2px solid red;
+  padding-top: 0.5rem;
+  text-align: center;
+  color: #FD6D15;
+  letter-spacing: 2px;
+}
+.about__us-staff-btn {
+  background-color: #FD6D15;
+  border: none;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid red;
+  margin: 0 0.5 0 0.5px;
+  position: absolute;
+}
+.about__us-staff-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 body {
-  background: #000;
+  background: #28282B;
   color: #fff;
   height: 100vh;
   font-family: "Noto Serif";

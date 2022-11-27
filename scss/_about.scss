@@ -1,0 +1,50 @@
+.about {
+    border: 2px solid red;
+    height: 100%;
+    padding: 6vh;
+    &__us {
+        border: 2px solid red;
+        height: 100%;
+        &-text {
+            border: 2px solid blue;
+            text-align: center;
+            padding-bottom: 0.5rem;
+        }
+        &-texts {
+            text-align: center;
+            font-size: small;
+            border: 2px solid red;
+            & {
+                border-bottom: 2px solid $secondary-color;
+                padding: 0.5rem;
+            }
+        }
+        &-staff {
+            padding-top: 0.5rem;
+            text-align: center;
+        }
+        &-staff-img {
+            background: url(/images/staff/staff-1.jpg);
+            background-size: 300px 300px;
+            height: 50%;
+            margin: 7px;
+        }
+        &-staff-name {
+            border: 2px solid red;
+            text-align: center;
+        }
+        &-staff-title {
+            border: 2px solid red;
+            padding-top: 0.5rem;
+            text-align: center;
+            color: $secondary-color;
+            letter-spacing: 2px;
+        }
+        &-staff-btn {
+            @include btn;
+            border: 2px solid red;
+            margin: 0 0.5 0 0.5px;
+            position: absolute;
+        }
+    }
+}
