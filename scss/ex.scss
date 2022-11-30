@@ -1,31 +1,17 @@
-.about {
+.projects {
     padding-bottom: 2rem;
     &__bio-image {
-        height: 60vh;
+        height: 30vh;
         width: 100%;
+        background: linear-gradient( to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), url('../img/model-1.jpg') center top;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
         .text-secondary {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
-            &-history {
-                padding: 1rem 1rem;
-                margin-bottom: 2rem;
-                text-align: center;
-                color: set-text-color-white($secondary-color);
-            }
-            &-catchphrase {
-                color: set-text-color-white($secondary-color);
-                text-align: center;
-                border-bottom: 2px solid $secondary-color;
-                margin-bottom: 1rem;
-                padding: 1rem 1rem;
-            }
-            &-staff {
-                font-size: x-large;
-            }
         }
     }
     &__items {
@@ -37,7 +23,7 @@
     }
     &__item {
         position: relative;
-        border-bottom: 3px solid $secondary-color;
+        border-bottom: 5px solid $secondary-color;
         overflow: hidden;
         cursor: pointer;
         img {
@@ -59,21 +45,10 @@
                 top: 0;
                 opacity: 0.9;
             }
-            .about__btn {
+            .projects__btn {
                 opacity: 1;
             }
         }
-    }
-    &__item-name {
-        font-size: large;
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
-    &__item-role {
-        font-size: larger;
-        text-align: center;
-        margin-bottom: 0.5rem;
-        color: $secondary-color;
     }
     &__btns {
         position: absolute;
@@ -82,16 +57,16 @@
         width: 100%;
         z-index: 1;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: center;
     }
     &__btn {
         opacity: 0;
-        color: set-text-color-white($secondary-color);
+        color: set-text-color($secondary-color);
         @include transition-ease;
         &:hover {
-            color: set-text-color-white(set-text-color-black($secondary-color));
+            color: set-text-color(set-text-color($secondary-color));
         }
     }
     .social-icons {
