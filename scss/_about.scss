@@ -12,13 +12,16 @@
         .text-secondary {
             font-size: 3rem;
             margin-bottom: 2rem;
+            font-family: 'Gilda Display', serif;
             &-history {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 padding: 1rem 1rem;
                 margin-bottom: 2rem;
                 text-align: center;
                 color: set-text-color-white($secondary-color);
             }
             &-catchphrase {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 color: set-text-color-white($secondary-color);
                 text-align: center;
                 border-bottom: 2px solid $secondary-color;
@@ -26,6 +29,7 @@
                 padding: 1rem 1rem;
             }
             &-staff {
+                font-family: 'Gilda Display', serif;
                 font-size: x-large;
                 margin-bottom: 1rem;
             }
@@ -102,6 +106,6 @@
         flex-direction: column;
     }
     footer {
-        transform: rotate(90deg) translate(-3rem, -5rem);
+        transform: rotate(90deg) translate(-3rem, -4rem);
     }
 }
