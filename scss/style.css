@@ -401,7 +401,7 @@
   padding-bottom: 2rem;
 }
 .contact__bio {
-  height: 85vh;
+  height: 100vh;
   width: 100%;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/image-3.jpg") center top;
   background-size: cover;
@@ -423,7 +423,42 @@
 }
 .contact__bio-time .time {
   font-size: larger;
-  padding-bottom: 0.5rem;
+  border: 2px solid red;
+}
+.contact__bio-imput {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 65vh;
+  display: grid;
+  place-items: center;
+}
+.contact__bio-imput-imputs {
+  place-items: center;
+  display: grid;
+}
+.contact__bio-imput-imputs .text {
+  margin-top: 1rem;
+  font-size: larger;
+  border-radius: 10px;
+}
+.contact__bio-imput-imputs .input {
+  margin-top: 1rem;
+}
+.contact__bio-imput-imputs .btn {
+  margin-top: 1rem;
+  background-color: #ff652f;
+  border: none;
+  color: #272727;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.contact__bio-imput-imputs .btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (min-width: 768px) {
