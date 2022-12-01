@@ -6,7 +6,7 @@
 
 .home {
   height: 100%;
-  padding-top: 15vh;
+  padding-top: 45vh;
   background: url(/images/image-1.jpg) center top;
   background-size: cover;
   overflow: hidden;
@@ -65,6 +65,11 @@
 }
 .home__container__btn-btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  position: fixed;
+  bottom: 1px;
 }
 
 .menu-btn {
@@ -181,9 +186,6 @@
   transition-delay: 0.55s;
 }
 
-.about {
-  padding-bottom: 2rem;
-}
 .about__bio-image {
   height: 65vh;
   width: 100%;
@@ -221,15 +223,14 @@
 }
 .about__items {
   width: 60vw;
-  margin: 2rem auto 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
+  margin: 2rem auto !important;
 }
 .about__item {
+  margin-bottom: 5em;
   position: relative;
   border-bottom: 3px solid #ff652f;
   overflow: hidden;
+  text-align: center;
   cursor: pointer;
 }
 .about__item img {
@@ -283,17 +284,7 @@
 .about__btn:hover {
   color: #000;
 }
-.about .social-icons {
-  display: flex;
-  flex-direction: column;
-}
-.about footer {
-  transform: rotate(90deg) translate(-3rem, -4rem);
-}
 
-.references {
-  padding-bottom: 2rem;
-}
 .references__bio-image {
   height: 45vh;
   width: 100%;
@@ -341,48 +332,41 @@
   font-size: larger;
   margin-left: 0.5rem;
 }
-.references .social-icons {
-  display: flex;
-  flex-direction: column;
-}
-.references footer {
-  transform: rotate(90deg) translate(-3rem, -4rem);
-}
 
-.product {
-  height: 100%;
-  padding-top: 5vh;
+.products {
   border: 2px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10em !important;
+  padding-bottom: 10em;
 }
-.product__heder {
+.products__header {
   border: 2px solid red;
   font-size: 2rem;
   font-family: "Gilda Display", serif;
   border-bottom: 2px solid #ff652f;
   padding: 2rem 5rem;
 }
-.product__products {
+.products__product {
   border: 2px solid red;
   margin: 1rem;
 }
-.product__products .checked {
+.products__product .checked {
   font-size: 50px;
   padding: 1rem 1rem;
 }
-.product__products .lav-name {
+.products__product .lav-name {
   color: #ff652f;
   font-size: 2rem;
   border: 2px solid red;
 }
-.product__products .lav-text {
+.products__product .lav-text {
   display: inline-block;
   margin-top: 1rem;
   margin: 1rem 1rem;
 }
-.product__btn-btn {
+.products__btn-btn {
   background-color: #ff652f;
   border: none;
   color: #272727;
@@ -393,12 +377,12 @@
   cursor: pointer;
   text-transform: uppercase;
 }
-.product__btn-btn:hover {
+.products__btn-btn:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact {
-  padding-bottom: 2rem;
+  padding-bottom: 10rem;
 }
 .contact__bio {
   height: 100vh;
@@ -461,6 +445,26 @@
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media screen and (min-width: 360px) {
+  .home {
+    padding-top: 22vh;
+  }
+}
+@media screen and (min-width: 375px) {
+  .home {
+    padding-top: 16vh;
+  }
+}
+@media screen and (min-width: 390px) {
+  .home {
+    padding-top: 34vh;
+  }
+}
+@media screen and (min-width: 414px) {
+  .home {
+    padding-top: 38vh;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
@@ -514,7 +518,6 @@
 body {
   background: #272727;
   color: #fff;
-  height: 100vh;
   font-family: "Gilda Display", serif;
   line-height: 1;
 }
@@ -551,25 +554,29 @@ main {
   height: 100%;
   width: 100%;
 }
-main .social-icons {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-}
-main .social-icons a {
-  padding: 0.4rem;
-  transition: all 0.5s ease-in-out;
-}
-main .social-icons a:hover {
-  color: #ff652f;
-}
 
 footer {
+  display: flex;
+  width: 99%;
   font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
   text-align: right;
   padding: 1rem;
   color: #fff;
+  -moz-column-break-after: always;
+       break-after: always;
+}
+footer .social-icons {
+  float: left;
+}
+footer .social-icons a {
+  padding: 0.4rem;
+  transition: all 0.5s ease-in-out;
+}
+footer .social-icons a:hover {
+  color: #ff652f;
+}
+footer .copyright {
+  position: absolute;
+  right: 0.5em;
+  float: right;
 }/*# sourceMappingURL=style.css.map */

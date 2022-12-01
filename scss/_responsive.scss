@@ -1,56 +1,80 @@
+@include galaxy-s8-plus {
+  .home {
+    padding-top: 22vh;
+  }
+}
+
+@include iphone-se {
+  .home {
+    padding-top: 16vh;
+  }
+}
+
+@include iphone-12-pro {
+  .home {
+    padding-top: 34vh;
+  }
+}
+
+@include iphone-xr {
+  .home {
+    padding-top: 38vh;
+  }
+}
+
 @include media-md {
-    .menu-btn {
-        visibility: hidden;
-    }
-    .nav {
-        visibility: visible;
-        .menu-nav {
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            background: transparent;
-            text-align: right;
-            &__item {
-                display: inline;
-                padding-right: 1.5rem;
-            }
-            &__link {
-                font-size: 1.5rem;
-            }
-        }
-    }
-    .about__bio {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+    .menu-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+      &__item {
+        display: inline;
+        padding-right: 1.5rem;
+      }
+      &__link {
         font-size: 1.5rem;
+      }
     }
-    .projects {
-        &__bio-image {
-            height: 40vh;
-        }
-        &__items {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .text-secondary {
-            font-size: 3rem;
-        }
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .projects {
+    &__bio-image {
+      height: 40vh;
     }
-    .contact__list {
-        grid-template-columns: repeat(2, 1fr);
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
     }
+    .text-secondary {
+      font-size: 3rem;
+    }
+  }
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @include media-lg {
-    .projects {
-        &__items {
-            grid-template-columns: repeat(3, 1fr);
-        }
+  .projects {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
     }
-    .contact__list {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  }
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @include media-xl {
-    .projects__bio-image {
-        height: 50vh;
-    }
+  .projects__bio-image {
+    height: 50vh;
+  }
 }
