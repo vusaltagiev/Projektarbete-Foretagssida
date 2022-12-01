@@ -188,8 +188,10 @@
   padding-bottom: 2rem;
 }
 .about__bio-image {
-  height: 60vh;
+  height: 65vh;
   width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/image-1.jpg") center top;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,6 +216,7 @@
 }
 .about__bio-image .text-secondary-staff {
   font-size: x-large;
+  margin-bottom: 1rem;
 }
 .about__items {
   width: 60vw;
@@ -284,6 +287,64 @@
   flex-direction: column;
 }
 .about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.references {
+  padding-bottom: 2rem;
+}
+.references__bio-image {
+  height: 45vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/image-2.jpg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.references__bio-image p {
+  margin-bottom: 2rem;
+}
+.references__bio {
+  width: 80%;
+  text-align: center;
+}
+.references__bio .text-secondary {
+  padding-bottom: 2rem;
+}
+.references .customers {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.references .customers__customer {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+}
+.references .customers__customer h2,
+.references .customers__customer h3 {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.references .customers__customer-rating {
+  margin-top: 1rem;
+}
+.references .customers__customer-rating .checked {
+  color: orange;
+}
+.references .customers__customer-rating .points {
+  font-size: larger;
+  margin-left: 0.5rem;
+}
+.references .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.references footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
