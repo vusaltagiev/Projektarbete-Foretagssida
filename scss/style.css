@@ -348,6 +348,55 @@
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
+.product {
+  height: 100%;
+  padding-top: 5vh;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product__heder {
+  border: 2px solid red;
+  color: red;
+  font-size: 2rem;
+  font-family: "Gilda Display", serif;
+  border-bottom: 2px solid #ff652f;
+  padding: 2rem 5rem;
+}
+.product__products {
+  border: 2px solid red;
+  margin: 1rem;
+}
+.product__products .checked {
+  font-size: 50px;
+  padding: 1rem 1rem;
+}
+.product__products .lav-name {
+  color: #ff652f;
+  font-size: 2rem;
+  border: 2px solid red;
+}
+.product__products .lav-text {
+  display: inline-block;
+  margin-top: 1rem;
+  margin: 1rem 1rem;
+}
+.product__btn-btn {
+  background-color: #ff652f;
+  border: none;
+  color: #272727;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.product__btn-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
 .contact {
   height: 100%;
   padding-top: 40vh;
@@ -369,10 +418,59 @@
   font-size: 1.5rem;
 }
 .contact .social-icons {
-  position: initial;
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .projects__bio-image {
+    height: 50vh;
+  }
+}
 body {
   background: #272727;
   color: #fff;

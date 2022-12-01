@@ -3,9 +3,9 @@
 @import'menu';
 @import'about';
 @import'references';
-// @import'product';
+@import'product';
 @import'contact';
-// @import'responsive';
+@import'responsive';
 body {
     background: $primary-color;
     color: set-text-color-black($primary-color);
